@@ -30,7 +30,8 @@ Number   Weather_Feel_C              "Feels like [%.0f °C]"                    
 Number   Weather_Visibility          "Visibility [%.1f miles]"                         <sun_clouds>            { http="<[weatherunderground:600000:JSONPATH($.current_observation.visibility_mi)]" }
 Number   Weather_SolarRad            "Solar Radiation [%d]"                            <sun>                   { http="<[weatherunderground:600000:JSONPATH($.current_observation.solarradiation)]" }
 Number   Weather_UV                  "UV Index [JS(uv.js):%s]"                         <sun>          (gChart) { http="<[weatherunderground:600000:JSONPATH($.current_observation.UV)]" }
-Number   Weather_PrecipToday         "Precipitation So Far [%.1f mm]"                  <rain>         (gChart) { http="<[weatherunderground:600000:JSONPATH($.current_observation.precip_today_metric)]" }
+Number   Weather_PrecipTodayin       "Precipitation So Far [%.1f in]"                  <rain>         (gChart) { http="<[weatherunderground:600000:JSONPATH($.current_observation.precip_today_in)]" }
+Number   Weather_PrecipTodaymm       "Precipitation So Far [%.1f mm]"                  <rain>         (gChart) { http="<[weatherunderground:600000:JSONPATH($.current_observation.precip_today_metric)]" }
 String   Weather_IconToday           "Icon [%s]"                                                               { http="<[weatherunderground:600000:JSONPATH($.current_observation.icon)]" }
 String   Weather_IconTodayURL        "Icon URL [%s]"                                                           { http="<[weatherunderground:600000:JSONPATH($.current_observation.icon_url)]" }
 
